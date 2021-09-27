@@ -6,7 +6,7 @@ const jwt = require("jsonwebtoken");
 
 const UserModel = require("../models").User;
 
-// SIGN OUT ROUTE
+
 router.get("/logout", (req, res) => {
   res.clearCookie("jwt");
   res.redirect("/");
